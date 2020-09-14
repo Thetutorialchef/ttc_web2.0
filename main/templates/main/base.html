@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style type="text/css">
+		.sidenav {
+			height:100%;
+			width:160px;
+			position: fixed;
+			z-index:1;
+			top:0;
+			left:0;
+			background-color:#111;
+			overflow-x: hidden;
+			padding-top:20px;
+		}
+
+                .sidenav a {
+			padding:6px 8px 6px 16px;
+			text-decoration: none;
+			font-size:25px;
+			color: #818181;
+			display:block;
+		}
+
+                .sidenav a:hover{
+			color:#f1f1f1;
+		}
+
+                .main{
+			margin-left:160px;
+			padding: 0px 10px;
+		}
+    </style>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>{% block title %}TTC Website {% endblock %}</title>
+</head>
+<body style="background-color:#000000;color:orangered">
+<div class="container-fluid" style="height: 1300px">
+        <!-- Begin Header -->
+        <div class="row"  style="background-image: url({% static "main/Twitch-Banner.png" %}); background-repeat: no-repeat; background-size: cover;background-position: center center; height: 400px">
+           <!--  <img src="{% static "main/Twitch-Banner.png" %}" alt="Twitch Banner" class="justify-content-md-center col-lg-12">
+-->
+        </div>
+        <!-- End Header -->
+         <!-- Begin Navbar -->
+         <div class="row ">
+         <nav class="navbar navbar-dark bg-dark navbar-expand-lg justify-content-md-center col-lg-12">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                     </button>
+                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <!-- <a class="navbar-brand" href="#">Hidden brand</a> -->
+                             <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                 <li class="nav-item active">
+        <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">TTC Academy</a>
+      </li>
+    </ul>
+                     <div>
+                         <a href="https://patreon.com/thetutorialchef" target="_blank"><img src="{% static "main/become_a_patron.png" %}" alt="Patreon" height="48px"></a>&nbsp; &nbsp;
+                         <a href="https://discord.gg/kGrRQJ9" target="_blank"><img src="{% static "main/Discord.png" %}" alt="Discord" height="48px"></a>&nbsp; &nbsp;
+                         <a href="https://youtube.com/c/thetutorialchef" target="_blank"><img src="{% static "main/youtube.png" %}" alt="Youtube" ></a> &nbsp;  &nbsp;
+                         <a href="https://fb.me/thetutorialchef" target="_blank"><img src="{% static "main/facebook.png" %}" alt="Facebook" ></a> &nbsp;  &nbsp;
+                         <a href="https://docs.microsoft.com/de-de/users/thetutorialchef/" target="_blank"><img src="{% static "main/ms.png" %}" alt="Microsoft" ></a> &nbsp;  &nbsp;
+                         <a href="https://github.com/thetutorialchef" target="_blank"><img src="{% static "main/github.png" %}" alt="Github" ></a> &nbsp;  &nbsp;
+                         <a href="http://reddit.com/r/thetutorialchef" target="_blank"><img src="{% static "main/reddit.png" %}" alt="Reddit" ></a> &nbsp;  &nbsp;
+
+
+
+                     </div>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+         </nav>
+         </div>
+         <!-- Ende Navbar -->
+<!--
+            <div class="sidenav">
+		            <a href="/">Home</a>
+		            <a href="/create">Create</a>
+		            <a href="/2">View</a>
+	        </div>
+
+	        -->
+
+	        <!-- Content  -->
+             <div id="content" name="content" class="">
+                    <div class="row justify-content-center">
+			            <div class="col-8">
+
+                             {% block content %}
+                             {% endblock %}
+   	                    </div>
+		            </div>
+             </div>
+             <!-- End Content -->
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
