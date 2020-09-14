@@ -3,34 +3,169 @@
 <html lang="en">
 <head>
 <style type="text/css">
-		.sidenav {
-			height:100%;
-			width:160px;
-			position: fixed;
-			z-index:1;
-			top:0;
-			left:0;
-			background-color:#111;
-			overflow-x: hidden;
-			padding-top:20px;
-		}
-
-                .sidenav a {
-			padding:6px 8px 6px 16px;
-			text-decoration: none;
-			font-size:25px;
-			color: #818181;
-			display:block;
-		}
-
-                .sidenav a:hover{
-			color:#f1f1f1;
-		}
-
-                .main{
-			margin-left:160px;
-			padding: 0px 10px;
-		}
+		.site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
     </style>
 
 	<meta charset="utf-8">
@@ -59,21 +194,40 @@
                     <!-- <a class="navbar-brand" href="#">Hidden brand</a> -->
                              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                                  <li class="nav-item active">
-        <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">TTC Academy</a>
-      </li>
-    </ul>
+                                         <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+                                 </li>
+                                 <li class="nav-item">
+                                         <a class="nav-link" href="/portfolio">Portfolio</a>
+                                 </li>
+                                 <li class="nav-item">
+                                         <a class="nav-link" href="/tutorials">Tutorials</a>
+                                 </li>
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Store</a>
+                                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                          <a class="dropdown-item" href="https://thetutorialchef.itch.io/" target="_blank">Itch.io</a>
+                                          <a class="dropdown-item" href="https://merch.streamelements.com/the_tutorial_chef" target="_blank">Merch Store</a>
+
+                                      </div>
+                                  </li>
+                                 <li class="nav-item">
+                                          <a class="nav-link" href="/about">About</a>
+                                 </li>
+                                <li class="nav-item">
+                                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">TTC Academy</a>
+                                </li>
+                                 <!-- Login Link -->
+                                 <li class="nav-item">
+                                         <a class="nav-link" href="/login">Login</a>
+                                </li>
+                             </ul>
                      <div>
                          <a href="https://patreon.com/thetutorialchef" target="_blank"><img src="{% static "main/become_a_patron.png" %}" alt="Patreon" height="48px"></a>&nbsp;&nbsp;
                          <a href="https://discord.gg/kGrRQJ9" target="_blank"><img src="{% static "main/Discord.png" %}" alt="Discord" height="48px"></a>&nbsp;&nbsp;
                          <a href="https://paypal.me/thetutorialchef" target="_blank"><i class="fa fa-paypal" aria-hidden="true" style="font-size:48px;"></i></a>&nbsp;&nbsp;
                          <a href="https://youtube.com/c/thetutorialchef" target="_blank"><i class="fa fa-youtube" aria-hidden="true" style="font-size:48px;"></i></a>&nbsp;&nbsp;
                          <a href="https://fb.me/thetutorialchef" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true" style="font-size:48px;"></i></a>&nbsp;&nbsp;
+                         <a href="https://twitter.com/thetutorialchef" target="_blank"><i class="fa fa-twitter" aria-hidden="true" style="font-size:48px;"></i></a>&nbsp;&nbsp;
                          <a href="https://docs.microsoft.com/de-de/users/thetutorialchef/" target="_blank"><i class="fa fa-windows" aria-hidden="true" style="font-size:48px;"></i></a>&nbsp;&nbsp;
                          <a href="https://github.com/thetutorialchef" target="_blank"><i class="fa fa-github" aria-hidden="true" style="font-size:48px;"></i></a>&nbsp;&nbsp;
                          <a href="https://reddit.com/r/thetutorialchef" target="_blank"><i class="fa fa-reddit-alien" aria-hidden="true" style="font-size:48px;"></i></a>&nbsp;&nbsp;
@@ -108,6 +262,67 @@
              </div>
              <!-- End Content -->
 </div>
+
+<!-- Begin Footer -->
+
+  <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">Hello the Tutorial Chef is here and I want to show you how to bake usefull programs.
+If you want to become an Gamedeveloper or Softwaredeveloper you are right here. As student of computer Science and 15 years experience in webdevelopment i’m able to show you to become a developer. If you are interested you can subscribe me on youtube and Patreon. Thank you for watching my videos and good luck on your Journey to become a Developer.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Links</h6>
+            <ul class="footer-links">
+              <li><a href="https://github.com/thetutorialchef">Github</a></li>
+              <li><a href="https://docs.microsoft.com/de-de/users/thetutorialchef/">Microsoft</a></li>
+              <li><a href="https://reddit.com/r/thetutorialchef">Reddit</a></li>
+              <li><a href="https://youtube.com/c/thetutorialchef">Youtube</a></li>
+              <li><a href="https://twitch.tv/the_tutorial_chef">Twitch</a></li>
+              <li><a href="https://patreon.com/thetutorialchef">Patreon</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="/about/">About</a></li>
+              <li><a href="/contact/">Contact</a></li>
+              <li><a href="/contribute/">Contribute</a></li>
+              <li><a href="/privacy-policy/">Privacy Policy</a></li>
+                <li><a href="/disclaimer/">Disclaimer</a></li>
+              <li><a href="/sitemap/">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2019 All Rights Reserved by
+         <a href="https://thetutorialchef.com">The Tutorial Chef</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="https://fb.me/thetutorialchef" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="https://twitter.com/thetutorialchef" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="youtube" href="https://youtube.com/c/thetutorialchef" target="_blank"><i class="fa fa-youtube"></i></a></li>
+              <li><a class="twitch" href="https://twitch.tv/the_tutorial_chef" target="_blank"><i class="fa fa-twitch"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+
+<!-- End Footer -->
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
