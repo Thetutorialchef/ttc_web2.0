@@ -16,12 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 from register import views as v
+from portfolio import views as port
 from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
     path("", include("main.urls")),
     path("register/", v.register, name="register"),
+    path("portfolio/", port.portfolio, name="portfolio"),
     path('', include("django.contrib.auth.urls")),
     path("admin/", admin.site.urls)
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

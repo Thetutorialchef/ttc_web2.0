@@ -72,3 +72,32 @@ def create(response):
 
 def view(response):
     return render(response, "main/view.html", {})
+
+
+def about(response):
+    return render(response, "main/about.html", {})
+
+
+def tutorials(response):
+    return render(response, "main/tutorials.html", {})
+
+
+def sitemap(response):
+    return render(response, "main/sitemap.html", {})
+
+
+def contribute(response):
+    return render(response, "main/contribute.html", {})
+
+
+def policy(response):
+    return render(response, "main/policy.html", {})
+
+
+def contact(response):
+    return render(response, "main/contact.html", {})
+
+
+def disclaimer(response):
+    return render(response, "main/disclaimer.html", {})
+
