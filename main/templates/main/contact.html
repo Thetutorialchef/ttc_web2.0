@@ -5,11 +5,26 @@ Contact
 {% endblock %}
 
 {% block content %}
+    <div class="thm-container">
+         <div class="row">
+             <div class="col-md-12">
+                 <div class="contact-form-content">
+                     <div class="title">
+                         <span>Contact with us</span>
+                         <h2>Send Message</h2>
+                     </div><!-- /.title -->
+                     <form action="inc/sendemail.php" class="contact-form" novalidate="novalidate">
+                         <input type="text" name="name" placeholder="Your full name">
+                         <input type="text" name="email" placeholder="Your email address">
+                         <textarea name="message" placeholder="What you are looking for?"></textarea>
+                         <button type="submit" class="thm-btn yellow-bg">Submit Now</button>
+                         <div class="form-result"></div><!-- /.form-result -->
+                     </form>
+                 </div><!-- /.contact-form-content -->
+             </div><!-- /.col-md-8 -->
 
-<h1>Contact me</h1>
-
-    Contact Form
-    Discord
+         </div><!-- /.row -->
+     </div>
 
 
 {% endblock %}
